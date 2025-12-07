@@ -2,4 +2,4 @@
 ## Проект
 Этот репозиторий является каркасом для будущего веб-приложения.
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://github.com/rydolph/frontback)
+- [Публичная страница на GitHub Pages](https://rydolph.github.io/frontback/)

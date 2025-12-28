@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,83 @@
 
     <link rel="stylesheet" href="assets/styles/style.css">
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
 
     <title>Магазин</title>
 </head>
-<body>
-    <header class="bg_white">
+
+<body id="top">
+    <header class="main_header bg_white">
+        <div class="header_left">
             <img class="logo" src="assets/icons/LOGO.png" alt="Логотип Revo Coffee">
 
-            <h1 class = "main_text font_montserrat tx_blue bg_white tx_large line_70">YOUR <br>
-                <span class = "tx_white bg_coffe">PERSONALIZED</span> <br>
+            <h1 class="main_text font_montserrat tx_blue tx_large">YOUR <br>
+                <span class="tx_white bg_coffe">PERSONALIZED</span> <br>
                 COFFEE
             </h1>
         </div>
-        
-        <nav class="font_nunito tx_white bg_blue ">
-            <a href="#"><img src="assets/icons/shopping-cart-3.png" alt="Корзина"></a>
-            <p class = tx_title>TRANG CHỦ</p>
-            <ul class="tx_sub_title">
-                <li><a href="#coffee">COFFEE</a></li>
-                <li><a href="#phin-ma-mau">PHIN MẠ MÀU</a></li>
-                <li><a href="#combo-phin-phe">COMBO PHIN PHE</a></li>
-                <li><a href="#giftset">GIFTSET</a></li>
-                <li><a href="#lien-he">LIÊN HỆ</a></li>
-            </ul>
-        </nav>
+
+        <div class="header_right">
+            <div class="header_center">
+                <img src="assets/img/background.png" alt="">
+            </div>
+
+            <nav class="header_nav font_nunito tx_white bg_blue ">
+                <a class="link_cart" href="#"><img src="assets/icons/shopping-cart-3.png" alt="Корзина"></a>
+
+                <ul class="nav_list tx_sub_title">
+                    <li class="nav_item">
+                        <a class="nav_link link_title tx_title" href="#top">TRANG CHỦ</a>
+                    </li>
+
+                    <li class="nav_item"><a href="#coffee">COFFEE</a></li>
+                    <li class="nav_item"><a href="#phin-ma-mau">PHIN MẠ MÀU</a></li>
+                    <li class="nav_item"><a href="#combo-phin-phe">COMBO PHIN PHE</a></li>
+                    <li class="nav_item"><a href="#giftset">GIFTSET</a></li>
+                    <li class="nav_item"><a href="#lien-he">LIÊN HỆ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="font_nunito tx_black bg_white">
-        <section id="coffee">
-            <header>
-                <h2 class="tx_sub_title tx_blue">Your Personalized Coffee <br> 
+        <section id="coffee" class="coffee_section">
+            <header class="coffee_header">
+                <h2 class="tx_sub_title tx_blue">Your Personalized Coffee <br>
                     <span class="font_montserrat tx_medium">COFFEE BUILD YOUR BASE</span>
                 </h2>
             </header>
-            
-            <div>
-                <article>
+
+            <div class="coffee_items">
+                <article class="coffee_item">
                     <img src="assets/img/Nguồn gốc.png" alt="Nguồn gốc">
                     <h3 class="tx_title">Nguồn gốc</h3>
-                    <p class = "tx_body">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế</p>
+                    <p class="tx_body">Những hạt cà phê Arabica, Robusta đạt chất lượng theo tiêu chuẩn quốc tế</p>
                 </article>
 
-                <article>
+                <article class="coffee_item">
                     <img src="assets/img/Chất lượng.png" alt="Chất lượng">
                     <h3 class="tx_title">Chất lượng</h3>
-                    <p class = "tx_body">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê</p>
+                    <p class="tx_body">Từng một hạt cà phê là cả một quá trình tập trung cao độ của nghệ nhân cà phê</p>
                 </article>
 
-                <article>
+                <article class="coffee_item">
                     <img src="assets/img/Các loại hạt.png" alt="Các loại hạt">
                     <h3 class="tx_title">Các loại hạt</h3>
-                    <p class = "tx_body">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean</p>
+                    <p class="tx_body">70% chất lượng tách cà phê đến từ nguồn gốc và chất lượng green bean</p>
                 </article>
 
-                <article>
+                <article class="coffee_item">
                     <img src="assets/img/Pha chế.png" alt="Pha chế">
                     <h3 class="tx_title">Pha chế</h3>
-                    <p class = "tx_body">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt</p>
+                    <p class="tx_body">Những hạt cà phê được lột xác qua quá trình rang xay kỹ lưỡng và nghiêm ngặt</p>
                 </article>
             </div>
-            
+
         </section>
 
         <section id="phin-ma-mau">
@@ -79,121 +94,219 @@
                 </h2>
             </header>
 
-            <article>
-                <img src="assets/img/REVO Morning.png" alt="REVO Morning">
-                <p class="tx_price tx_coffe">99.000</p>
-                <h3 class="tx_title">REVO Morning</h3>
-                <p class="tx_body">đắng, hậu ngọt, hương hoa</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
+            <article class="pmm_card bg_white_white">
+                <div class="pmm_img">
+                    <img src="assets/img/REVO Morning.png" alt="REVO Morning">
+                </div>
+
+                <div class="pmm_info">
+                    <p class="tx_price tx_coffe">99.000</p>
+                    <h3 class="tx_title">REVO Morning</h3>
+                    <p class="tx_body">đắng, hậu ngọt, hương hoa</p>
+                    <div class="pmm_btns">
+                        <button class="tx_white bg_coffe">MUA NGAY</button>
+                        <button class="bg_white">CHI TIẾT</button>
+                    </div>
+                </div>
             </article>
 
-            <article>
-                <img src="assets/img/REVO Origin.png" alt="REVO Origin">
-                <p class="tx_price tx_coffe">139.000</p>
-                <h3 class="tx_title">REVO Origin</h3>
-                <p class="tx_body">hậu ngọt, ít đắng, vị chua dâu</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
+            <article class="pmm_card bg_white_white">
+                <div class="pmm_img">
+                    <img src="assets/img/REVO Origin.png" alt="REVO Origin">
+                </div>
+
+                <div class="pmm_info">
+                    <p class="tx_price tx_coffe">139.000</p>
+                    <h3 class="tx_title">REVO Origin</h3>
+                    <p class="tx_body">hậu ngọt, ít đắng, vị chua dâu</p>
+                    <div class="pmm_btns">
+                        <button class="tx_white bg_coffe">MUA NGAY</button>
+                        <button class="bg_white">CHI TIẾT</button>
+                    </div>
+                </div>
             </article>
 
-            <article>
-                <img src="assets/img/REVO Everyday.png" alt="REVO Everyday">
-                <p class="tx_price tx_coffe">85.000</p>
-                <h3 class="tx_title">REVO Morning</h3>
-                <p class="tx_body">cân bằng, hậu đắng, vị chocolate </p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
+            <article class="pmm_card bg_white_white">
+                <div class="pmm_img">
+                    <img src="assets/img/REVO Everyday.png" alt="REVO Everyday">
+                </div>
+
+                <div class="pmm_info">
+                    <p class="tx_price tx_coffe">85.000</p>
+                    <h3 class="tx_title">REVO Morning</h3>
+                    <p class="tx_body">cân bằng, hậu đắng, vị chocolate</p>
+                    <div class="pmm_btns">
+                        <button class="tx_white bg_coffe">MUA NGAY</button>
+                        <button class="bg_white">CHI TIẾT</button>
+                    </div>
+                </div>
             </article>
 
-            <article>
-                <img src="assets/img/REVO Đậm Đà.png" alt="REVO Đậm Đà">
-                <p class="tx_price tx_coffe">75.000</p>
-                <h3 class="tx_title">REVO Đậm Đà</h3>
-                <p class="tx_body">đậm đà, đắng, truyền thống</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
+            <article class="pmm_card bg_white_white">
+                <div class="pmm_img">
+                    <img src="assets/img/REVO Đậm Đà.png" alt="REVO Đậm Đà">
+                </div>
+
+                <div class="pmm_info">
+                    <p class="tx_price tx_coffe">75.000</p>
+                    <h3 class="tx_title">REVO Đậm Đà</h3>
+                    <p class="tx_body">đậm đà, đắng, truyền thống</p>
+                    <div class="pmm_btns">
+                        <button class="tx_white bg_coffe">MUA NGAY</button>
+                        <button class="bg_white">CHI TIẾT</button>
+                    </div>
+                </div>
             </article>
         </section>
 
-        <section id = giftset>
-            <header>
-                <h2 class="tx_sub_title tx_blue">Best Gift For Best Friend <br>
+        <section id="giftset" class="giftset bg_gray">
+            <header class="giftset_header">
+                <h2 class="tx_sub_title tx_blue">
+                    Best Gift For Best Friend <br>
                     <span class="font_montserrat tx_medium">GIFTSET</span>
                 </h2>
             </header>
 
-            <ol>
-                <li class="font_montserrat">
-                    <article class="font_nunito">
+            <div class="giftset_layout">
+                <article class="giftset_card bg_white_white">
+
+                    <div class="giftset_media">
                         <img src="assets/img/Giftset.png" alt="Giftset">
+                    </div>
+
+                    <div class="giftset_info">
                         <p class="tx_price tx_coffe">285.000</p>
                         <h3 class="tx_title">Giftset "Cà phê phin Việt Nam"</h3>
-                        <p class="tx_body">Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê 
-                            được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí 
-                            quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình 
-                            yêu, sự đam mê của người làm cà phê… tạo ra những tách cà 
-                            phê tinh khiết chỉ dành riêng cho bạn</p>
-                        <img src="assets/icons/Loại hạt.png" alt="Loại hạt">
-                        <h4 class = "tx_body tx_blue">Loại hạt</h4>
-                        <p class="tx_blue tx_bold ">Fine Robusta Blend</p>
+                        <p class="tx_body">
+                            Món quà tuyệt vời dành cho người sành cà phê. Hạt cà phê
+                            được Revo cẩn trọng chọn lựa, rang xay theo công nghệ và bí
+                            quyết học hỏi từ những nghệ nhân nổi tiếng, cùng với tình
+                            yêu, sự đam mê của người làm cà phê… tạo ra những tách cà
+                            phê tinh khiết chỉ dành riêng cho bạn
+                        </p>
 
-                        <img src="assets/icons/Độ cao.png" alt="Độ cao">
-                        <h4 class = "tx_body tx_blue">Độ cao</h4>
-                        <p class="tx_blue tx_bold">700 - 800m</p>
+                        <div class="giftset_meta">
+                            <div class="giftset_meta-item">
+                                <img src="assets/icons/Loại hạt.png" alt="">
 
-                        <button class = "tx_white bg_coffe">MUA NGAY</button>
-                        <button class = "bg_white">CHI TIẾT</button>
-                    </article>
-                </li>
-            </ol>
+                                <div>
+                                    <p class="tx_body tx_blue">Loại hạt</p>
+                                    <p class="tx_blue tx_bold">Fine Robusta Blend</p>
+                                </div>
+                            </div>
+
+                            <div class="giftset_meta-item">
+                                <img src="assets/icons/Độ cao.png" alt="">
+
+                                <div>
+                                    <p class="tx_body tx_blue">Độ cao</p>
+                                    <p class="tx_blue tx_bold">700 - 800m</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="giftset_actions">
+                            <button class="tx_white bg_coffe">MUA NGAY</button>
+                            <button class="bg_white">CHI TIẾT</button>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="giftset_tabs">
+                    <div class="giftset_tab is-active">1</div>
+                    <div class="giftset_tab">2</div>
+                    <div class="giftset_tab">3</div>
+                </div>
+            </div>
         </section>
 
-        <section id = "combo-phin-phe" class="price">
+        <section id="combo-phin-phe" class="price">
             <header>
-                <h2 class="tx_sub_title tx_blue">Your Personalized Coffee <br> 
+                <h2 class="tx_sub_title tx_blue">Your Personalized Coffee <br>
                     <span class="font_montserrat tx_medium">COMBO PHIN PHÊ</span>
                 </h2>
             </header>
 
-            <article class="bg_white_white">
-                <img src="assets/img/Combo Revo Đậm Đà.png" alt="Combo Revo Đậm Đà">
-                <p class="tx_price tx_coffe">147.000</p>
-                <s class="tx_discription">155.000</s>
-                <h3 class="tx_title">Combo Revo Đậm Đà</h3>
-                <p class="tx_body">Hàm lượng caffein trong Revo Đậm Đà
-                    đủ mạnh để làm bạn tỉnh táo làm việc...</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
-            </article>
+            <div class="combo_items">
+                <article class="combo_card bg_white_white">
 
-            <article class="bg_white_white">
-                <img src="assets/img/Combo Revo Everyday.png" alt="Combo Revo Everyday">
-                <p class="tx_price tx_coffe">156.000</p>
-                <s class="tx_discription">165.000</s>
-                <h3 class="tx_title">Combo Revo Everyday</h3>
-                <p class="tx_body">Revo Everyday được phối trộn giữa vị
-                    đắng của hạt Robusta và hương thơm...</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
-            </article>
+                    <div class="combo_media">
+                        <img src="assets/img/Combo Revo Đậm Đà.png" alt="Combo Revo Đậm Đà">
+                    </div>
 
-            <article class="bg_white_white">
-                <img src="assets/img/Combo Revo Honey.png" alt="Combo Revo Honey">
-                <p class="tx_price tx_coffe">275.000</p>
-                <s class="tx_discription">260.000</s>
-                <h3 class="tx_title">Combo Revo Honey</h3>
-                <p class="tx_body">Honey trong tên gọi Revo Honey đến
-                    từ phương pháp chế biến hạt Arabica...</p>
-                <button class = "tx_white bg_coffe">MUA NGAY</button>
-                <button class = "bg_white">CHI TIẾT</button>
-            </article>
+                    <div class="combo_info">
+                        <div class="combo_prices">
+                            <p class="tx_price tx_coffe">147.000</p>
+                            <s class="tx_discription">155.000</s>
+                        </div>
+
+                        <h3 class="tx_title">Combo Revo Đậm Đà</h3>
+                        <p class="tx_body">Hàm lượng caffein trong Revo Đậm Đà
+                            đủ mạnh để làm bạn tỉnh táo làm việc...</p>
+
+                        <div class="combo_actions">
+                            <button class="tx_white bg_coffe">MUA NGAY</button>
+                            <button class="bg_white">CHI TIẾT</button>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="combo_card bg_white_white">
+
+                    <div class="combo_media">
+                        <img src="assets/img/Combo Revo Everyday.png" alt="Combo Revo Everyday">
+                    </div>
+
+                    <div class="combo_info">
+                        <div class="combo_prices">
+                            <p class="tx_price tx_coffe">156.000</p>
+                            <s class="tx_discription">165.000</s>
+                        </div>
+
+                        <h3 class="tx_title">Combo Revo Everyday</h3>
+                        <p class="tx_body">Revo Everyday được phối trộn giữa vị
+                            đắng của hạt Robusta và hương thơm...</p>
+
+                        <div class="combo_actions">
+                            <button class="tx_white bg_coffe">MUA NGAY</button>
+                            <button class="bg_white">CHI TIẾT</button>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article class="combo_card bg_white_white">
+
+                    <div class="combo_media">
+                        <img src="assets/img/Combo Revo Honey.png" alt="Combo Revo Honey">
+                    </div>
+
+                    <div class="combo_info">
+                        <div class="combo_prices">
+                            <p class="tx_price tx_coffe">275.000</p>
+                            <s class="tx_discription">260.000</s>
+                        </div>
+
+                        <h3 class="tx_title">Combo Revo Honey</h3>
+                        <p class="tx_body">Honey trong tên gọi Revo Honey đến
+                            từ phương pháp chế biến hạt Arabica...</p>
+
+                        <div class="combo_actions">
+                            <button class="tx_white bg_coffe">MUA NGAY</button>
+                            <button class="bg_white">CHI TIẾT</button>
+                        </div>
+                    </div>
+
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer id = "lien-he"> 
-        <p class="tx_discription bg_gray">© Revo Coffee Việt Nam - 2018</p>
+    <footer id="lien-he" class="footer bg_gray">
+        <p class="tx_discription">© Revo Coffee Việt Nam - 2018</p>
     </footer>
 
 </body>
+
 </html>

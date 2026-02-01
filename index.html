@@ -8,7 +8,9 @@
 
     <link rel="stylesheet" href="assets/styles/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="stylesheet" href="assets/styles/mobile.css" media="screen and (max-width: 1024px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
@@ -33,19 +35,25 @@
                 <img src="assets/img/background.png" alt="">
             </div>
 
-            <nav class="header_nav font_nunito tx_white bg_blue ">
-                <a class="link_cart" href="#"><img src="assets/icons/shopping-cart-3.png" alt="Корзина"></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+    <span class="menu-toggle__line"></span>
+</button>
+
+            <nav class="header_nav font_nunito tx_white bg_blue" id="mainNav">
+                <a class="link_cart nav_link" href="#"><img src="assets/icons/shopping-cart-3.png" alt="Корзина"></a>
 
                 <ul class="nav_list tx_sub_title">
                     <li class="nav_item">
                         <a class="nav_link link_title tx_title" href="#top">TRANG CHỦ</a>
                     </li>
 
-                    <li class="nav_item"><a href="#coffee">COFFEE</a></li>
-                    <li class="nav_item"><a href="#phin-ma-mau">PHIN MẠ MÀU</a></li>
-                    <li class="nav_item"><a href="#combo-phin-phe">COMBO PHIN PHE</a></li>
-                    <li class="nav_item"><a href="#giftset">GIFTSET</a></li>
-                    <li class="nav_item"><a href="#lien-he">LIÊN HỆ</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#coffee">COFFEE</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#phin-ma-mau">PHIN MẠ MÀU</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#combo-phin-phe">COMBO PHIN PHE</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#giftset">GIFTSET</a></li>
+                    <li class="nav_item"><a class="nav_link" href="#lien-he">LIÊN HỆ</a></li>
                 </ul>
             </nav>
         </div>
@@ -306,6 +314,12 @@
     <footer id="lien-he" class="footer bg_gray">
         <p class="tx_discription">© Revo Coffee Việt Nam - 2018</p>
     </footer>
+
+<!-- Кнопка "Наверх" -->
+<button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+
+<!-- Подключение JavaScript -->
+<script src="assets/scripts/menu.js"></script>
 
 </body>
 
